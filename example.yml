@@ -1,0 +1,8 @@
+---
+- name: Configure RHEL baseline
+  hosts: all
+  become: true
+  gather_facts: false
+  roles:
+    - myllynen.rhel_ansible.roles.system_keyboard
+    - myllynen.rhel_ansible.roles.packages_install

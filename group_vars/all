@@ -1,0 +1,12 @@
+---
+#
+# packages_install
+#
+packages_install:
+  - at
+
+#
+# system_keyboard
+#
+system_keyboard: fi
+system_font: eurlatgr
