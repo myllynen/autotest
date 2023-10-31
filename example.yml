@@ -4,5 +4,5 @@
   become: true
   gather_facts: false
   roles:
-    - myllynen.rhel_ansible.roles.system_keyboard
-    - myllynen.rhel_ansible.roles.packages_install
+    - myllynen.rhel_ansible.system_keyboard
+    - myllynen.rhel_ansible.packages_install

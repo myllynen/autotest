@@ -4,23 +4,23 @@
   become: true
   gather_facts: false
   roles:
-    - myllynen.rhel_ansible.roles.system_hostname
-    - myllynen.rhel_ansible.roles.packages_remove
-    - myllynen.rhel_ansible.roles.ipv6_setup
-    - myllynen.rhel_ansible.roles.etc_hosts
-    - myllynen.rhel_ansible.roles.guest_agent
-    - myllynen.rhel_ansible.roles.dns_cache
-    - myllynen.rhel_ansible.roles.timezone
-    - myllynen.rhel_ansible.roles.timesync
-    - myllynen.rhel_ansible.roles.boot_parameters
-    - myllynen.rhel_ansible.roles.system_keyboard
-    - myllynen.rhel_ansible.roles.system_locale
-    - myllynen.rhel_ansible.roles.watchdog
-    - myllynen.rhel_ansible.roles.packages_install
-    - myllynen.rhel_ansible.roles.performance_tuning
-    - myllynen.rhel_ansible.roles.rescue_image
-    - myllynen.rhel_ansible.roles.security_hardening
-    - myllynen.rhel_ansible.roles.system_coredump
-    - myllynen.rhel_ansible.roles.insights_client
-    - myllynen.rhel_ansible.roles.packages_remove
-    - myllynen.rhel_ansible.roles.system_init
+    - myllynen.rhel_ansible.system_hostname
+    - myllynen.rhel_ansible.packages_remove
+    - myllynen.rhel_ansible.ipv6_setup
+    - myllynen.rhel_ansible.etc_hosts
+    - myllynen.rhel_ansible.guest_agent
+    - myllynen.rhel_ansible.dns_cache
+    - myllynen.rhel_ansible.timezone
+    - myllynen.rhel_ansible.timesync
+    - myllynen.rhel_ansible.boot_parameters
+    - myllynen.rhel_ansible.system_keyboard
+    - myllynen.rhel_ansible.system_locale
+    - myllynen.rhel_ansible.watchdog
+    - myllynen.rhel_ansible.packages_install
+    - myllynen.rhel_ansible.performance_tuning
+    - myllynen.rhel_ansible.rescue_image
+    - myllynen.rhel_ansible.security_hardening
+    - myllynen.rhel_ansible.system_coredump
+    - myllynen.rhel_ansible.insights_client
+    - myllynen.rhel_ansible.packages_remove
+    - myllynen.rhel_ansible.system_init
