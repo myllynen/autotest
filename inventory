@@ -1,0 +1,13 @@
+[dev]
+idm1.sub.example.com
+
+[prod]
+idm2.sub.example.com
+idm3.sub.example.com
+
+[test]
+idmc.sub.example.com
+
+#[non_prod]
+#dev
+#test

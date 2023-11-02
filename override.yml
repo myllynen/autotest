@@ -1,8 +1,11 @@
 ---
-- name: Group vars example
+- name: Vars override example
   hosts: all
   become: true
   gather_facts: false
+  vars:
+    packages_remove:
+      - telnet-server
   roles:
     - myllynen.rhel_ansible_roles.system_keyboard
     - myllynen.rhel_ansible_roles.packages_remove

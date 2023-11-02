@@ -2,22 +2,20 @@
 #
 # packages_install
 #
-__packages_install_all:
+packages_install:
   - bash-completion
   - man-pages
   - nano
 
-packages_install: "{{ __packages_install_all }}"
-
 #
 # packages_remove
 #
-__packages_remove_all:
+packages_remove:
+  - at
   - glibc-gconv-extra
   - parted
+  - tcpdump
   - telnet-server
-
-packages_remove: "{{ __packages_remove_all }}"
 
 #
 # system_keyboard
