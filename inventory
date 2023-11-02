@@ -8,6 +8,6 @@ idm3.sub.example.com
 [test]
 idmc.sub.example.com
 
-#[non_prod]
-#dev
-#test
+[non_prod:children]
+dev
+test
