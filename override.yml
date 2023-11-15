@@ -4,8 +4,10 @@
   become: true
   gather_facts: false
   vars:
-    packages_remove:
-      - telnet-server
+    packages_install_display_results: true
+    #packages_remove:
+    #  - telnet-server
+    packages_remove_display_results: true
   roles:
     - myllynen.rhel_ansible_roles.system_keyboard
     - myllynen.rhel_ansible_roles.packages_remove
