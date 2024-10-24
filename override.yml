@@ -10,6 +10,9 @@
     #  - telnet-server
     packages_remove_display_results: true
   tasks:
+    - name: Display packages to be installed
+      debug:
+        var: packages_install
     - name: Display packages to be removed
       debug:
         var: packages_remove
