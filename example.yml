@@ -19,6 +19,10 @@
         var: groups
       run_once: true
 
+    - name: Display configured timezone
+      debug:
+        var: timezone
+
     - name: Display packages to be installed
       debug:
         var: packages_install
