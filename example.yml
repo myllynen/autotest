@@ -12,10 +12,12 @@
           ansible_inventory_sources: {{ ansible_inventory_sources }}
           ansible_play_hosts_all: {{ ansible_play_hosts_all }}
           ansible_play_batch: {{ ansible_play_batch }}
+      run_once: true
 
     - name: Display Ansible host groups
       debug:
         var: groups
+      run_once: true
 
     - name: Display packages to be installed
       debug:

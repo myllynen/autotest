@@ -13,9 +13,3 @@ packages_install: "{{ __packages_install_all + __packages_install_dev }}"
 __packages_remove_dev: []
 
 packages_remove: "{{ __packages_remove_all + __packages_remove_dev }}"
-
-#
-# system_keyboard
-#
-system_keyboard: fi
-system_font: eurlatgr

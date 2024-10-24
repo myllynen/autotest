@@ -3,7 +3,6 @@
 # packages_install
 #
 packages_install:
-  - at
   - bash-completion
   - man-pages
   - nano
@@ -12,12 +11,8 @@ packages_install:
 # packages_remove
 #
 packages_remove:
+  - at
   - glibc-gconv-extra
   - parted
+  - tcpdump
   - telnet-server
-
-#
-# system_keyboard
-#
-system_keyboard: fi
-system_font: eurlatgr
