@@ -4,11 +4,24 @@
   become: true
   gather_facts: false
   vars:
+    apply_changes: false
     packages_install_display_results: true
     #packages_remove:
     #  - telnet-server
     packages_remove_display_results: true
-  roles:
-    - myllynen.rhel_ansible_roles.system_keyboard
-    - myllynen.rhel_ansible_roles.packages_remove
-    - myllynen.rhel_ansible_roles.packages_install
+  tasks:
+    - name: Display packages to be removed
+      debug:
+        var: packages_remove
+    - name: Configure keyboard
+      include_role:
+        name: myllynen.rhel_ansible_roles.system_keyboard
+      when: apply_changes | bool
+    - name: Remove packages
+      include_role:
+        name: myllynen.rhel_ansible_roles.packages_remove
+      when: apply_changes | bool
+    - name: Install packages
+      include_role:
+        name: myllynen.rhel_ansible_roles.packages_install
+      when: apply_changes | bool
