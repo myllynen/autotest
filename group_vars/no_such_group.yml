@@ -1,0 +1,12 @@
+---
+#
+# packages_install
+#
+packages_install:
+  - zsh
+
+#
+# packages_remove
+#
+packages_remove:
+  - linux-firmwareglibc-gconv-extra
