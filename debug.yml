@@ -26,3 +26,7 @@
     - name: Display facts
       debug:
         var: ansible_facts
+
+    - name: Display environment
+      debug:
+        var: environment
