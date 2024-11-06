@@ -2,7 +2,7 @@
 - name: Debug playbook example
   hosts: all
   become: false
-  gather_facts: false
+  gather_facts: true
   tasks:
     - name: Display Ansible configuration details
       debug:
