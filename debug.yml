@@ -27,6 +27,9 @@
       debug:
         var: ansible_facts
 
-    - name: Display environment
+    - name: Display environment variables
       debug:
-        var: environment
+        msg: |
+          MY_VAR1: '{{ lookup('ansible.builtin.env', 'MY_VAR1') | default('unset') }}
+          MY_VAR2: '{{ lookup('ansible.builtin.env', 'MY_VAR2') | default('unset') }}
+          MY_VAR3: '{{ lookup('ansible.builtin.env', 'MY_VAR3') | default('unset') }}
