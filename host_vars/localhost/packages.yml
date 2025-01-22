@@ -1,0 +1,6 @@
+---
+#
+# packages_install
+#
+packages_install:
+  - man-pages

@@ -1,0 +1,22 @@
+[local]
+localhost ansible_connection=local
+
+[apac]
+idm1.sub.example.com
+
+[emea]
+idm2.sub.example.com
+
+[dev]
+idm1.sub.example.com
+idm2.sub.example.com
+
+[prod]
+idmc.sub.example.com
+
+[test]
+idm3.sub.example.com
+
+[non_prod:children]
+dev
+test
