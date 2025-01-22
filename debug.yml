@@ -34,3 +34,12 @@
           MY_VAR2: {{ lookup('ansible.builtin.env', 'MY_VAR2') | default('unset') }}
           MY_VAR3: {{ MY_VAR3 | default('unset') }}
           MY_VAR4: {{ MY_VAR4 | default('unset') }}
+
+    - name: Read list of installed Ansible collections
+      command: ansible-galaxy collection list
+      register: collection_list
+      changed_when: false
+
+    - name: Display list of installed Ansible collections
+      debug:
+        var: collection_list.stdout
