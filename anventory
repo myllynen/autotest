@@ -1,0 +1,20 @@
+all:
+  children:
+    local:
+      hosts:
+        localhost:
+          ansible_connection: local
+    dev:
+      hosts:
+        idm1.sub.example.com:
+    prod:
+      hosts:
+        idm2.sub.example.com:
+        idm3.sub.example.com:
+    test:
+      hosts:
+        idmc.sub.example.com:
+    non_prod:
+      children:
+        dev:
+        test:
