@@ -1,5 +1,0 @@
----
-#collections:
-#  - name: https://github.com/myllynen/rhel-ansible-roles
-#    type: git
-#    version: master
