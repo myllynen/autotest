@@ -11,20 +11,20 @@
     packages_remove_display_results: true
   tasks:
     - name: Display packages to be installed
-      debug:
+      ansible.builtin.debug:
         var: packages_install
     - name: Display packages to be removed
-      debug:
+      ansible.builtin.debug:
         var: packages_remove
     - name: Configure keyboard
-      include_role:
+      ansible.builtin.include_role:
         name: myllynen.rhel_ansible_roles.system_keyboard
       when: apply_changes | bool
     - name: Remove packages
-      include_role:
+      ansible.builtin.include_role:
         name: myllynen.rhel_ansible_roles.packages_remove
       when: apply_changes | bool
     - name: Install packages
-      include_role:
+      ansible.builtin.include_role:
         name: myllynen.rhel_ansible_roles.packages_install
       when: apply_changes | bool

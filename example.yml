@@ -5,7 +5,7 @@
   gather_facts: false
   tasks:
     - name: Display Ansible configuration details
-      debug:
+      ansible.builtin.debug:
         msg: |
           ansible_version: {{ ansible_version }}
           ansible_config_file: {{ ansible_config_file }}
@@ -15,18 +15,18 @@
       run_once: true
 
     - name: Display Ansible host groups
-      debug:
+      ansible.builtin.debug:
         var: groups
       run_once: true
 
     - name: Display configured timezone
-      debug:
+      ansible.builtin.debug:
         var: timezone
 
     - name: Display packages to be installed
-      debug:
+      ansible.builtin.debug:
         var: packages_install
 
     - name: Display packages to be removed
-      debug:
+      ansible.builtin.debug:
         var: packages_remove
