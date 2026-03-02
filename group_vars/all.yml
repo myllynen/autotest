@@ -14,7 +14,6 @@ packages_install: "{{ __packages_install_all }}"
 #
 __packages_remove_all:
   - glibc-gconv-extra
-  - parted
   - telnet-server
 
 packages_remove: "{{ __packages_remove_all }}"

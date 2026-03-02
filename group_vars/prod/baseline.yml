@@ -13,6 +13,5 @@ packages_install:
 packages_remove:
   - at
   - glibc-gconv-extra
-  - parted
   - tcpdump
   - telnet-server

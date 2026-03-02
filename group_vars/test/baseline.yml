@@ -13,5 +13,4 @@ packages_install:
 #
 packages_remove:
   - glibc-gconv-extra
-  - parted
   - telnet-server
