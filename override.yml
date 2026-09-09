@@ -6,8 +6,8 @@
   vars:
     apply_changes: false
     packages_install_display_results: true
-    #packages_remove:
-    #  - telnet-server
+    # packages_remove:
+    #   - telnet-server
     packages_remove_display_results: true
   tasks:
     - name: Display packages to be installed
