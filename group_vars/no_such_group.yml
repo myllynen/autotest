@@ -9,4 +9,4 @@ packages_install:
 # packages_remove
 #
 packages_remove:
-  - linux-firmwareglibc-gconv-extra
+  - linux-firmware
