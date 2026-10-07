@@ -3,11 +3,4 @@
 # packages_install
 #
 packages_install:
-  - at
-  - bash-completion
-  - man-pages
-  - nano
-  - tcpdump
-  - tmux
-  - wget
-  - zsh
+  - install-from-host-vars

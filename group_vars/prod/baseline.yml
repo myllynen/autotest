@@ -3,15 +3,10 @@
 # packages_install
 #
 packages_install:
-  - bash-completion
-  - man-pages
-  - nano
+  - install-from-group-prod
 
 #
 # packages_remove
 #
 packages_remove:
-  - at
-  - glibc-gconv-extra
-  - tcpdump
-  - telnet-server
+  - remove-from-group-prod

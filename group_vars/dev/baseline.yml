@@ -3,7 +3,7 @@
 # packages_install
 #
 __packages_install_dev:
-  - tcpdump
+  - install-from-group-dev
 
 packages_install: "{{ __packages_install_all + __packages_install_dev }}"
 

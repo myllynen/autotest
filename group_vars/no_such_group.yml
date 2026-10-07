@@ -3,10 +3,10 @@
 # packages_install
 #
 packages_install:
-  - zsh
+  - install-from-group-no-such-group
 
 #
 # packages_remove
 #
 packages_remove:
-  - linux-firmware
+  - remove-from-group-no-such-group

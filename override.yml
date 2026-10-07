@@ -4,27 +4,23 @@
   become: true
   gather_facts: false
   vars:
-    apply_changes: false
-    packages_install_display_results: true
-    # packages_remove:
-    #   - telnet-server
+    packages_remove:
+      - remove-from-playbook
     packages_remove_display_results: true
+
   tasks:
+    - name: Display timezone to be configured
+      ansible.builtin.debug:
+        var: timezone
+
+    - name: Display keyboard to be configured
+      ansible.builtin.debug:
+        var: keyboard
+
     - name: Display packages to be installed
       ansible.builtin.debug:
         var: packages_install
+
     - name: Display packages to be removed
       ansible.builtin.debug:
         var: packages_remove
-    - name: Configure keyboard
-      ansible.builtin.include_role:
-        name: myllynen.rhel_ansible_roles.system_keyboard
-      when: apply_changes | bool
-    - name: Remove packages
-      ansible.builtin.include_role:
-        name: myllynen.rhel_ansible_roles.packages_remove
-      when: apply_changes | bool
-    - name: Install packages
-      ansible.builtin.include_role:
-        name: myllynen.rhel_ansible_roles.packages_install
-      when: apply_changes | bool

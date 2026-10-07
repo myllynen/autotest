@@ -4,22 +4,29 @@ all:
       hosts:
         127.0.0.1:
           ansible_connection: local
+
     apac:
       hosts:
         idm1.sub.example.com:
+
     emea:
       hosts:
         idm2.sub.example.com:
+
     dev:
       hosts:
         idm1.sub.example.com:
+          ansible_ssh_timeout: 15
         idm2.sub.example.com:
+
     prod:
       hosts:
         idmc.sub.example.com:
+
     test:
       hosts:
         idm3.sub.example.com:
+
     non_prod:
       children:
         dev:

@@ -3,9 +3,7 @@
 # packages_install
 #
 __packages_install_all:
-  - bash-completion
-  - man-pages
-  - nano
+  - install-from-group-all
 
 packages_install: "{{ __packages_install_all }}"
 
@@ -13,8 +11,7 @@ packages_install: "{{ __packages_install_all }}"
 # packages_remove
 #
 __packages_remove_all:
-  - glibc-gconv-extra
-  - telnet-server
+  - remove-from-group-all
 
 packages_remove: "{{ __packages_remove_all }}"
 

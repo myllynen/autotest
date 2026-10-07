@@ -3,14 +3,10 @@
 # packages_install
 #
 packages_install:
-  - at
-  - bash-completion
-  - man-pages
-  - nano
+  - install-from-group-test
 
 #
 # packages_remove
 #
 packages_remove:
-  - glibc-gconv-extra
-  - telnet-server
+  - remove-from-group-test

@@ -19,9 +19,13 @@
         var: groups
       run_once: true
 
-    - name: Display configured timezone
+    - name: Display timezone to be configured
       ansible.builtin.debug:
         var: timezone
+
+    - name: Display keyboard to be configured
+      ansible.builtin.debug:
+        var: keyboard
 
     - name: Display packages to be installed
       ansible.builtin.debug:

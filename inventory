@@ -8,7 +8,7 @@ idm1.sub.example.com
 idm2.sub.example.com
 
 [dev]
-idm1.sub.example.com
+idm1.sub.example.com ansible_ssh_timeout=15
 idm2.sub.example.com
 
 [prod]

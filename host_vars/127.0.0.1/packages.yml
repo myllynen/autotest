@@ -3,4 +3,4 @@
 # packages_install
 #
 packages_install:
-  - man-pages
+  - install-from-host-vars
