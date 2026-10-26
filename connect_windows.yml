@@ -62,7 +62,7 @@
         msg: "{{ output }}"
       run_once: true
 
-    - name: Set remote connection port
+    - name: Set connection parameters
       vars:
         conn_port: "{{ 'ansible_' + ansible_connection + '_port' }}"
       ansible.builtin.set_fact:
